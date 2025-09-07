@@ -13,12 +13,15 @@ The dataset used for this project is sourced from a Kaggle competition (NLP Gett
 The project involved the following steps:
 
 **Data Loading and Exploration: **
+
 The training and test datasets were loaded and basic exploratory data analysis, including examining tweet lengths, was performed.
 
 **Data Preparation:**
+
 Text data was processed using Keras's TextVectorization layer to handle tokenization and padding of tweet sequences to a fixed length (SEQUENCE_LENGTH = 160). Basic standardization (lowercase and punctuation removal) was included in this step. (An attempt at more comprehensive text cleaning was made but found to be too slow).
 
-<h2>Model Building:</h2>
+**Model Building:**
+
 A Basic SimpleRNN Model was built, consisting of an Embedding layer, a SimpleRNN layer, and a Dense output layer.
 A Bidirectional LSTM Model was built as an improved architecture, consisting of an Embedding layer, a Bidirectional layer wrapping an LSTM layer, and a Dense output layer.
 Model Training: Both the SimpleRNN and Bidirectional LSTM models were compiled and trained on the prepared training data, with performance monitored on a validation set.
@@ -39,7 +42,7 @@ The Bidirectional LSTM model, however, showed substantially better results, achi
 *   Utilize bidirectional context by processing the text from both directions, providing a richer understanding of the tweet's meaning.
 
 <h1>How to Run</h1>
-Clone the repository.
-Open the .py in a Jupyter environment.
-Ensure necessary libraries (pandas, numpy, tensorflow, keras_nlp, sklearn, seaborn, matplotlib, nltk, contractions, tqdm) are installed.
-Run the cells sequentially to execute the data loading, preprocessing, model training, evaluation, and submission file generation steps.
+*   Clone the repository.
+*   Open the .py in a Jupyter environment.
+*   Ensure necessary libraries (pandas, numpy, tensorflow, keras_nlp, sklearn, seaborn, matplotlib, nltk, contractions, tqdm) are installed.
+*   Run the cells sequentially to execute the data loading, preprocessing, model training, evaluation, and submission file generation steps.
