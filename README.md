@@ -12,10 +12,10 @@ The dataset used for this project is sourced from a Kaggle competition (NLP Gett
 <h2>Methodology</h2>
 The project involved the following steps:
 
-<h2>Data Loading and Exploration: </h2>
+**Data Loading and Exploration: **
 The training and test datasets were loaded and basic exploratory data analysis, including examining tweet lengths, was performed.
 
-<h2>Data Preparation:</h2>
+**Data Preparation:**
 Text data was processed using Keras's TextVectorization layer to handle tokenization and padding of tweet sequences to a fixed length (SEQUENCE_LENGTH = 160). Basic standardization (lowercase and punctuation removal) was included in this step. (An attempt at more comprehensive text cleaning was made but found to be too slow).
 
 <h2>Model Building:</h2>
