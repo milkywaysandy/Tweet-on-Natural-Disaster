@@ -43,6 +43,9 @@ The Bidirectional LSTM model, however, showed substantially better results, achi
 
 <h1>How to Run</h1>
 *   Clone the repository.
+
 *   Open the .py in a Jupyter environment.
+  
 *   Ensure necessary libraries (pandas, numpy, tensorflow, keras_nlp, sklearn, seaborn, matplotlib, nltk, contractions, tqdm) are installed.
+
 *   Run the cells sequentially to execute the data loading, preprocessing, model training, evaluation, and submission file generation steps.
