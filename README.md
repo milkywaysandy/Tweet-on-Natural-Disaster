@@ -12,6 +12,7 @@ The dataset used for this project is sourced from a Kaggle competition (NLP Gett
 <h2>Methodology</h2>
 The project involved the following steps:
 
+
 **Data Loading and Exploration: **
 
 The training and test datasets were loaded and basic exploratory data analysis, including examining tweet lengths, was performed.
@@ -42,6 +43,7 @@ The Bidirectional LSTM model, however, showed substantially better results, achi
 *   Utilize bidirectional context by processing the text from both directions, providing a richer understanding of the tweet's meaning.
 
 <h1>How to Run</h1>
+
 *   Clone the repository.
 
 *   Open the .py in a Jupyter environment.
