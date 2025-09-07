@@ -13,7 +13,7 @@ The dataset used for this project is sourced from a Kaggle competition (NLP Gett
 The project involved the following steps:
 
 
-**Data Loading and Exploration: **
+**Data Loading and Exploration:**
 
 The training and test datasets were loaded and basic exploratory data analysis, including examining tweet lengths, was performed.
 
