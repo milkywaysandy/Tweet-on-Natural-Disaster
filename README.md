@@ -1,30 +1,30 @@
-# Tweet-on-Natural-Disaster
+
 **NLP Project with Bidirectional LSTM**
 <h1>Project Goal</h1>
 The primary goal of this project is to build deep learning models to accurately classify tweets as either related to a real disaster or not. Using social media data, particularly from X (formally Twitter),  for real-time communication during emergencies, making an automated classification system valuable for organizations like disaster relief agencies and news outlets.
 
-<h2>Dataset</h2>h2>
+<h2>Dataset</h2>
 The dataset used for this project is sourced from a Kaggle competition (NLP Getting Started). It contains tweets that have been classified with a binary label indicating whether they are about actual disasters.
 
 *   Training Set Shape: (7613, 5)
 *   Test Set Shape: (3263, 4)
 
-<h2>Methodology</h2>h2>
+<h2>Methodology</h2>
 The project involved the following steps:
 
-<h2>Data Loading and Exploration: </h2>h2>
+<h2>Data Loading and Exploration: </h2>
 The training and test datasets were loaded and basic exploratory data analysis, including examining tweet lengths, was performed.
 
-<h2>Data Preparation:</h2>h2>
+<h2>Data Preparation:</h2>
 Text data was processed using Keras's TextVectorization layer to handle tokenization and padding of tweet sequences to a fixed length (SEQUENCE_LENGTH = 160). Basic standardization (lowercase and punctuation removal) was included in this step. (An attempt at more comprehensive text cleaning was made but found to be too slow).
 
-<h2>Model Building:</h2>h2>
+<h2>Model Building:</h2>
 A Basic SimpleRNN Model was built, consisting of an Embedding layer, a SimpleRNN layer, and a Dense output layer.
 A Bidirectional LSTM Model was built as an improved architecture, consisting of an Embedding layer, a Bidirectional layer wrapping an LSTM layer, and a Dense output layer.
 Model Training: Both the SimpleRNN and Bidirectional LSTM models were compiled and trained on the prepared training data, with performance monitored on a validation set.
 Model Evaluation: The performance of both models was evaluated on the validation set using metrics such as Accuracy, Precision, Recall, and F1 Score. Confusion matrices were generated to visualize the classification results.
 
-<h2>Results and Analysis</h2>h2>
+<h2>Results and Analysis</h2>
 The evaluation revealed significant performance differences between the two models:
 
 Model	|Accuracy|	Precision|	Recall	|F1
